@@ -1,13 +1,2 @@
-import os
-
-# Get environment variables with fallback to your hardcoded values
-BOT_TOKEN = os.getenv('BOT_TOKEN', '7509938357:AAEXVLbk0cdud8qgX8R-O50dYFepNrVz6oU')
-ADMIN_ID = int(os.getenv('ADMIN_ID', '7845994060'))
-USDT_ADDRESS = "TTP45gJWhuo6Axe8jYqc1hBc2f8zMyS5Ki"
-PROFIT_RATE = 0.008  # 0.8% every 2 hours
-
-# Validation
-if not BOT_TOKEN:
-    raise ValueError("No BOT_TOKEN set. Please set the BOT_TOKEN environment variable.")
-if not ADMIN_ID:
-    raise ValueError("No ADMIN_ID set. Please set the ADMIN_ID environment variable.")
+pyTelegramBotAPI==4.12.0
+python-dotenv==1.0.0
